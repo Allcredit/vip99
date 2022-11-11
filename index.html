@@ -25,7 +25,7 @@ body{
   height: 100vh;
 }
 .container{
-    background-image: url(https://i.pinimg.com/originals/96/dd/76/96dd76d35704327ab8ddc1999e3be677.gif);
+    background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
     padding: 10px;
     background-attachment: fixed;
     width: 100%;
@@ -111,6 +111,9 @@ body{
 <div class="botton">
 <button type="submit" class="btn btn-primary btn-lg btn-block" style="color: rgb(255, 255, 255);"><i class="fas fa-save"></i>ลงทะเบียน</button>
 </div>
+<div class="botton1">
+  <button type="button" id="send" class="btn btn-secondary btn-lg btn-block" style="color: rgb(255, 255, 255);">ยืนยันรับเครดิตฟรี</button>
+  </div>
 
   </form>
 <script>
@@ -130,10 +133,10 @@ body{
        return false; 
             })  
   window.onload = function(e){
-      liff.init({liffId: "1657642815-Rq9vgdaX"}, function(){
+      liff.init({liffId: "1657642779-pylLDBOq"}, function(){
         liff.ready.then(() =>{
           if(liff.isLoggedIn()){
-            var stext = document.getElementById("button")
+            var stext = document.getElementById("send")
             stext.onclick = () => {
               var messagetext = [{
     "type": "text",
